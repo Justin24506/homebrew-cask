@@ -1,6 +1,6 @@
 cask "thaw@beta" do
-  version "2.0.0-rc.2"
-  sha256 "48e0517de79ad9af8cf8ed2468e9d38721c2116ef7e5f92244fbda885333bf83"
+  version "2.0.0-rc.4"
+  sha256 "8623e753dbd2ba4464ec1176970a07af3dd5d0c4714f240bf81b9a13ac052303"
 
   url "https://github.com/thaw-app/Thaw/releases/download/#{version}/Thaw_#{version}.zip"
   name "Thaw"
@@ -9,7 +9,7 @@ cask "thaw@beta" do
 
   livecheck do
     url :url
-    regex(/v?(\d+(?:\.\d+)+(?:-(beta|RC)[._-]\d+)?)/i)
+    regex(/^v?(\d+(?:\.\d+)+(?:-(?:beta|rc)[._-]?\d+(?:\.\d+)*)?)$/i)
   end
 
   auto_updates true

@@ -16,12 +16,14 @@ cask "discord" do
     end
   end
   on_monterey :or_newer do
-    version "0.0.406"
-    sha256 "bdda8d3d655294dffa3d062ce8c93710a2695f5ba7486647d3b306dc5277424c"
+    version "0.0.408"
+    sha256 "9b6ad2542f786610d4d8627f8ce04bb289d7401900c6044cfaaf7382719bea3d"
 
     livecheck do
-      url "https://discord.com/api/download/stable?platform=osx"
-      strategy :header_match
+      url "https://updates.discord.com/distributions/app/manifests/latest?channel=stable&platform=osx&arch=x64"
+      strategy :json do |json|
+        json.dig("full", "host_version")&.join(".")
+      end
     end
   end
 

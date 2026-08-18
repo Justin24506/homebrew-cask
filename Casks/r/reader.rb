@@ -1,6 +1,6 @@
 cask "reader" do
-  version "0.1.3031"
-  sha256 "5c1a780fbce18d14b1b12d8818dd1a826c4703eedd8ef5701f662f470044b113"
+  version "0.1.3076"
+  sha256 "db32b2e17b729ddabadab6ddc429a3bb4f75c1458d07db70ec15094ba88fd60c"
 
   url "https://github.com/readwiseio/reader-desktop-releases/releases/download/reader-desktop-v#{version}/Reader_#{version}_universal.dmg",
       verified: "github.com/readwiseio/reader-desktop-releases/"
@@ -17,6 +17,8 @@ cask "reader" do
   depends_on :macos
 
   app "Reader.app"
+
+  uninstall quit: "io.readwise.read"
 
   zap trash: [
     "~/Library/Application Support/io.readwise.read",

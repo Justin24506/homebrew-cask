@@ -1,9 +1,9 @@
 cask "4k-video-downloader+" do
   arch arm: "arm64", intel: "x64"
 
-  version "26.2.1"
-  sha256 arm:   "dd15fb7d73dbe17c1b3670d1bb587c371f81453852272e59a451b0600e7755a5",
-         intel: "4e2b68d03f2cce5713aa6ab0e84bc7733bad0e2027bec2704e1339d863d53390"
+  version "26.3.1"
+  sha256 arm:   "9b9843c2a08b05948ca52b924091fec3667f50867c9beca9f32212d252a79874",
+         intel: "ed79727fd9a6e778882e85dbc8c9f7fa7c60b9ae6c12c4f50286c972d475161e"
 
   url "https://dl.4kdownload.com/app/4kvideodownloaderplus_#{version}_#{arch}.dmg"
   name "4K Video Downloader Plus"
@@ -18,6 +18,8 @@ cask "4k-video-downloader+" do
   depends_on macos: :monterey
 
   app "4K Video Downloader+.app"
+
+  uninstall quit: "com.openmedia.4kvideodownloaderplus"
 
   zap trash: [
     "~/Library/Application Support/4kdownload.com/4K Video Downloader+",

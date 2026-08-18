@@ -1,6 +1,6 @@
 cask "nostalgiapp" do
-  version "1.1.0.10,156"
-  sha256 "fdc8a4fb8979e5627c03714233e4220c2284249bc8d2b02bbe1c1387768de145"
+  version "1.1.1.1,162"
+  sha256 "cc05a14dfe803b67b78ea1a2669f5169ec598c9694a117969493c156c3ea431d"
 
   url "https://www.nostalgi.app/downloads/NostalgiApp-#{version.csv.first}#{"-b#{version.csv.second}" if version.csv.second}.dmg"
   name "NostalgiApp"
@@ -26,6 +26,8 @@ cask "nostalgiapp" do
   depends_on macos: :ventura
 
   app "NostalgiApp.app"
+
+  uninstall quit: "com.nostalgi.app"
 
   zap trash: [
     "~/Library/Application Support/NostalgiApp",

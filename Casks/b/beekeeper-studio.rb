@@ -2,11 +2,11 @@ cask "beekeeper-studio" do
   arch arm: "-arm64"
   os macos: "dmg", linux: "AppImage"
 
-  version "5.9.3"
-  sha256 arm:          "0950fd4fc24d93db4956df4371b1726ba90ac4e776e4d6847df22104027eb276",
-         intel:        "03637d10f798b8e9ee9d3059e2e73ada17cfe2e31498970e316ce6f2d75f2783",
-         arm64_linux:  "889406baabd5dbb006d091ecdddfedc4dafec929b05d0d8b2b991c11f173faf7",
-         x86_64_linux: "5846c83d48567bc11d01d06ed76510622ae656269a40d9e91c7ba27b46bd3c37"
+  version "6.0.1"
+  sha256 arm:          "f542dd0496a5247afc11ea93c92c7a06d3e2150bb115f623773c2563d80fea87",
+         intel:        "43dc2f9491c552f3543775711838d0ec83eaefcfd40318a7df946087035ede3d",
+         arm64_linux:  "234691980912e9773f4b8ff51ac36e4f390e0c71545b846644662fa5fee994b2",
+         x86_64_linux: "cd59c4382307617b2af5bfcd967645092bd23c6f0a9f50f29f5a26758424430b"
 
   on_macos do
     auto_updates true

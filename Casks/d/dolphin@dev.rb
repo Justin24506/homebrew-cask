@@ -1,6 +1,6 @@
 cask "dolphin@dev" do
-  version "2606-280,4d,53"
-  sha256 "8f48ad0c1708e9fd9296defc23c78c2ef9ff5066a152afd6ad5edb3f77c6abdd"
+  version "2606-302,26,f4"
+  sha256 "a052243194eabd0a921644bf7b9ad1f7fac9efe54ee6fc43057f23f90a07d431"
 
   url "https://dl.dolphin-emu.org/builds/#{version.csv.second}/#{version.csv.third}/dolphin-master-#{version.csv.first}-universal.dmg"
   name "Dolphin Dev"
@@ -25,6 +25,8 @@ cask "dolphin@dev" do
   depends_on macos: :big_sur
 
   app "Dolphin.app"
+
+  uninstall quit: "org.dolphin-emu.dolphin"
 
   zap trash: [
     "~/Library/Application Support/Dolphin",

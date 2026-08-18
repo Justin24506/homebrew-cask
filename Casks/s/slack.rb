@@ -14,9 +14,9 @@ cask "slack" do
     end
   end
   on_monterey :or_newer do
-    version "4.51.180"
-    sha256 arm:   "e9086e6561304225bc6726132512cc66ae4c6b20605fdc6504b761b6d8936a80",
-           intel: "723d7ba4d461d98d10a89e86a6d169d101803e8a479bd47d15b70ac1fd2b6108"
+    version "4.51.191"
+    sha256 arm:   "b22953c06eee150f0324ae71702b2b5a8450efdefbf84439217ef7bfd6a8ab24",
+           intel: "1780f8d8dcb0057875f566ecf49623bab8d190e0327e89e0bb3b094a485a73a9"
 
     url "https://downloads.slack-edge.com/desktop-releases/mac/#{arch}/#{version}/Slack-#{version}-macOS.dmg",
         verified: "downloads.slack-edge.com/"

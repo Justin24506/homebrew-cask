@@ -1,9 +1,9 @@
 cask "tencent-ugit" do
   arch arm: "arm64", intel: "x64"
 
-  version "5.51.0"
-  sha256 arm:   "ab11f8e0ef26918419c9efcc96b6f2c4e56762a213378c95b3af89b35083fd1d",
-         intel: "500c32063b0ad6d5b9c009b59a19836171968b057a2e40177ddbca7b830122ad"
+  version "5.52.1"
+  sha256 arm:   "97d5351f343d48a72c1c911fde2e0c4dfc0b142752c974a304c8ae681caa820f",
+         intel: "45cc096f9948735206552b596a71a9dd7f1ec508342c37da114afbcc48c81611"
 
   url "https://ugit.qq.com/downloads/ugit_public/UGit-#{arch}-#{version}.dmg"
   name "UGit"
@@ -18,7 +18,7 @@ cask "tencent-ugit" do
     end
   end
 
-  depends_on macos: :catalina
+  depends_on macos: :big_sur
 
   app "UGit.app"
 

@@ -1,6 +1,6 @@
 cask "microsoft-edge@canary" do
-  version "153.0.4198.0,ccb476f2-26f8-47ef-9844-20cede31de45"
-  sha256 "1ff949a1750b0ca2c6b9bdf7754fcefc4d5dc650b8d5b6575f041294984fd429"
+  version "153.0.4224.0,324eb0e6-9472-43b9-a225-68865ab2c523"
+  sha256 "39fcdba67b25a093ac8ac5f71a96634d1d3c4360e456eff5ee543afc255fcec7"
 
   url "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/#{version.csv.second}/MicrosoftEdgeCanary-#{version.csv.first}.dmg"
   name "Microsoft Edge Canary"
@@ -23,7 +23,8 @@ cask "microsoft-edge@canary" do
 
   app "Microsoft Edge Canary.app"
 
-  uninstall launchctl: "com.microsoft.EdgeUpdater.wake"
+  uninstall launchctl: "com.microsoft.EdgeUpdater.wake",
+            quit:      "com.microsoft.edgemac.Canary"
 
   zap trash: [
         "~/Library/Application Scripts/com.microsoft.edgemac.wdgExtension.Canary",

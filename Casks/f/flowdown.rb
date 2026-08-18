@@ -1,6 +1,6 @@
 cask "flowdown" do
-  version "4.10.2"
-  sha256 "b416463f0309b149b68b041a1f8a3d59109060a8ee77a52d2730efc5e621a44b"
+  version "5.1.3"
+  sha256 "3f535cf8f4df32cf737ac1c2bb7b2298382252740a57c001b226d12bd7659f2f"
 
   url "https://github.com/Lakr233/FlowDown/releases/download/#{version}/FlowDown-#{version}.zip",
       verified: "github.com/Lakr233/FlowDown/"
@@ -17,6 +17,8 @@ cask "flowdown" do
   depends_on macos: :sonoma
 
   app "FlowDown.app"
+
+  uninstall quit: "wiki.qaq.flow"
 
   zap trash: [
     "~/Library/Containers/wiki.qaq.flow.FlowDownWidget",

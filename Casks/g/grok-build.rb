@@ -2,16 +2,16 @@ cask "grok-build" do
   arch arm: "aarch64", intel: "x86_64"
   os macos: "macos", linux: "linux"
 
-  version "0.2.118"
-  sha256 arm:          "2de5b9609a03492dd6b9e4cca9637d651fe998bb8371bf9f852e7b28b38c034e",
-         intel:        "93183cfb072df88cbac707e44f8bbc62d9474d2047e9c8605519c64b720e2689",
-         arm64_linux:  "54010e335aace6b5dedd022539ece7bc83f38253e8636aaf0796562aeecb2e67",
-         x86_64_linux: "c192282e62abd24a9be64750363ff827d806ba613918399a8c69c815b1da08f6"
+  version "1.0.5"
+  sha256 arm:          "3dfa7f04fbb5427a8fbead286591543aaecb478b3a0ab222c4329eca1a3b2f86",
+         intel:        "21cbb063c6167175ba00a67f64ac638af8f79a44aef816cfd5b4915c77528e60",
+         arm64_linux:  "1c1fe67d7c35497fb09f44a451f57acc3787add4c9aea2c56f5c7c75dc5ffcf1",
+         x86_64_linux: "9ba87444e1819e8f6104adbbf4676a870c204380aa5c3e1c38a926c4ea677238"
 
   url "https://x.ai/cli/grok-#{version}-#{os}-#{arch}"
   name "Grok Build"
   desc "Extensible coding agent for the terminal"
-  homepage "https://x.ai/cli"
+  homepage "https://x.ai/build", browsed: "2026-08-13"
 
   livecheck do
     url "https://x.ai/cli/stable"

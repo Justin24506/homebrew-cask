@@ -1,6 +1,6 @@
 cask "rstudio@daily" do
-  version "2026.08.0-daily-184"
-  sha256 "13bea9778f28e32b51ed3618fb8d3bd12acb8ce47aa0b6290b221206ac9cb6a9"
+  version "2026.09.0-daily-81"
+  sha256 "f05cf3cf4f95474421cbd451b486d204d6de3e488a9a333757c3e39718e4d3ee"
 
   url "https://rstudio-ide-build.s3.amazonaws.com/electron/macos/RStudio-#{version}.dmg",
       verified: "rstudio-ide-build.s3.amazonaws.com/electron/macos/"
@@ -20,6 +20,8 @@ cask "rstudio@daily" do
   depends_on macos: :monterey
 
   app "RStudio.app"
+
+  uninstall quit: "com.rstudio.desktop"
 
   zap trash: [
     "~/.rstudio-desktop",

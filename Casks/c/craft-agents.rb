@@ -2,8 +2,8 @@ cask "craft-agents" do
   arch arm: "arm64", intel: "x64"
 
   on_arm do
-    version "0.11.3"
-    sha256 "6c9efc471a1f5c4f0a8690d3d48dc23ccaa2e5761a263cec21fede1a7ef195f4"
+    version "0.12.0"
+    sha256 "448adc6c1e2c6960d96441db721905230e30421de1f0824e6d9ad994b5a19ae2"
   end
   on_intel do
     version "0.10.1"

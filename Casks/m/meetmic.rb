@@ -1,8 +1,8 @@
 cask "meetmic" do
-  version "1.31.372"
-  sha256 "46a0b31ad15a03f231e4fc2b727091b2814c5bed00412aa4be77df17dbb56bcd"
+  version "1.32.384"
+  sha256 "2f8dbca6a4089623d97ffc71bcf12b14dc07c62bccd0c140e74acd03683cec2a"
 
-  url "https://meetmicapp.s3.us-west-002.backblazeb2.com/MeetMic_#{version}.zip",
+  url "https://meetmicapp.s3.us-west-002.backblazeb2.com/MeetMic-#{version}.zip",
       verified: "meetmicapp.s3.us-west-002.backblazeb2.com/"
   name "MeetMic"
   desc "Audio transcription tool"

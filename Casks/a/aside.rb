@@ -1,6 +1,6 @@
 cask "aside" do
-  version "1.0.728.1"
-  sha256 "cf85129b65175e19e15e6918c8b0a053a6220cf12c6a0c0121cc3abfc1ce9cef"
+  version "1.0.813.1"
+  sha256 "cc93d6ffd5d932b9423a737dcd0f04bf8463fabdff6572384dbf906335785233"
 
   url "https://releases.aside.com/dev-updater/Aside-#{version}.dmg"
   name "Aside"
@@ -15,7 +15,7 @@ cask "aside" do
   end
 
   auto_updates true
-  depends_on macos: :monterey
+  depends_on macos: :ventura
 
   app "Aside.app"
 
